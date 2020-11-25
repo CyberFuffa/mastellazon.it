@@ -6,6 +6,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=https://www.mastellazon.it" />
+    <script type="text/javascript">
+        if(window.location.protocol != 'https:') {
+            window.location.href = "https://www.mastellazon.it"
+        }
+    </script>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
