@@ -58,9 +58,9 @@ ul#stores li.store{
     min-width: 400px;
     border: solid 1px;
     border-color: #DDD;
-    padding-left: 1px;
-    padding-bottom: 1px;
-    padding-right: 1px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
     padding-top: 2px;
     margin: 5px;
 }

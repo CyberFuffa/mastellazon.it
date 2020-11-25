@@ -42,7 +42,7 @@
                     <span class="seller-contact-button a-button a-button-primary">
                         <span class="a-button-inner">
                             <a href="<?php echo $store->link; ?>" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Entra nel negozio sannita!
+                                Scopri
                             </a>
                         </span>
                     </span>
@@ -51,7 +51,7 @@
         </ul>
     </div>
     <div id="pre-footer">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit sapien massa, ut gravida enim scelerisque interdum. Sed eget dui odio. In a sagittis dolor. 
+    Sei un negozio e vuoi comparire su questa pagina sannita? Semplice, inizia a vendere su Amazon.
     </div>
     <div id="footer">
         Copyright (c) 2020 - Mastellazon - Dai Sanniti per i Sanniti
