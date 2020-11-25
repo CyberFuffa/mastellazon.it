@@ -39,7 +39,7 @@
                         </svg>
                     </div>
                     <div class="store-feedback"><?php echo $store->feedback; ?></div>
-                    <span id="seller-contact-button" class="a-button a-button-primary">
+                    <span class="seller-contact-button a-button a-button-primary">
                         <span class="a-button-inner">
                             <a href="<?php echo $store->link; ?>" target="_blank" rel="noopener" class="a-button-text" role="button">
                                 Entra nel negozio sannita!
