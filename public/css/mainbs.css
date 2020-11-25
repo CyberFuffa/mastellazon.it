@@ -44,8 +44,32 @@ html {
 }
 
 /* am */
+.a-star-1 {
+    background-position: -69px -368px;
+}
+
+.a-star-1-5 {
+    background-position: -223px -368px;
+}
+
+.a-star-2 {
+    background-position: -53px -368px;
+}
+
+.a-star-2-5 {
+    background-position: -207px -368px;
+}
+
 .a-star-3 {
     background-position: -37px -368px;
+}
+
+.a-star-3-5 {
+    background-position: -191px -368px;
+}
+
+.a-star-4 {
+    background-position: -21px -368px;
 }
 
 .a-star-4-5 {

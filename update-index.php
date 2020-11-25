@@ -71,7 +71,7 @@
     <footer class="container">
         <hr>
         <p>Sei un negozio sannita e vuoi comparire su questa pagina assieme ai nostri amici sanniti? Semplice, inizia a vendere su Amazon.</p>
-        <p>Copyright (c) 2020 - Mastellazon - Dai Sanniti per i Sanniti</p>
+        <p>Copyright &copy; CyberFuffa 2020 - Mastellazon - Dai Sanniti per i Sanniti</p>
     </footer>
   </body>
 </html>
