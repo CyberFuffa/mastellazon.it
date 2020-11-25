@@ -6,7 +6,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=https://www.mastellazon.it" />
     <script type="text/javascript">
         if(window.location.protocol != 'https:') {
             window.location.href = "https://www.mastellazon.it"
@@ -14,6 +13,12 @@
     </script>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:url"         content="https://www.mastellazon.it" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Mastellazon - Lo shopping sannita" />
+    <meta property="og:description" content="Lo sapevi che un negozio sannita può raggiungere clienti in tutta Italia?" />
+    <meta property="og:image"       content="img/og.png" />
 
     <title>Mastellazon</title>
     <link rel="stylesheet" href="css/normalize.css" />
