@@ -1,5 +1,5 @@
 <?php
-    const CONFIG_FILE = 'config.json';
+    const CONFIG_FILE = 'public/config.json';
     $config = json_decode(file_get_contents(CONFIG_FILE));
 ?>
 <!DOCTYPE html>
