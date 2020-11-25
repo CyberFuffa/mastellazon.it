@@ -34,7 +34,7 @@
     </div>
     <div id="main">
         <h1 class="claim">Ti svelo un segreto: anche un <u>piccolo artigiano o commerciante sannita</u>
-            può vendere su un marketplace come Amazon</h1>
+            può vendere su un marketplace come Amazon.</h1>
         <h1 class="claim">Lo sapevi che <span class="store-number"><?php echo count($config->stores); ?></span> 
         negozi sanniti sono già usciti dalla mentalità provinciale e raggiungono
         clienti in tutta Italia?<h1>
@@ -62,7 +62,7 @@
         </ul>
     </div>
     <div id="pre-footer">
-    Sei un negozio sannita e vuoi comparire su questa pagina assieme ai nostri amici sanniti? Semplice, inizia a vendere su Amazon.
+    <i>Sei un negozio sannita e vuoi comparire su questa pagina assieme ai nostri amici sanniti? Semplice, inizia a vendere su Amazon.</i>
     </div>
     <div id="footer">
         Copyright (c) 2020 - Mastellazon - Dai Sanniti per i Sanniti
