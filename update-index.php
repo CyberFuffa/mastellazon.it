@@ -22,7 +22,7 @@
         <img src="img/logo.png" alt="Mastellazon">
     </div>
     <div id="main">
-        <h1 class="claim">Ti svelo un segreto: anche un piccolo artigiano o commerciante sannita
+        <h1 class="claim">Ti svelo un segreto: anche un <u>piccolo artigiano o commerciante sannita</u>
             può vendere su un marketplace come Amazon</h1>
         <h1 class="claim">Lo sapevi che <span class="store-number"><?php echo count($config->stores); ?></span> 
         negozi sanniti sono già usciti dalla mentalità provinciale e raggiungono

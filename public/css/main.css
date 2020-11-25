@@ -29,6 +29,7 @@ body {
 .claim {
     font-size: 3em;
     line-height: 1.25em;
+    text-align: center;
 }
 
 .store-number {
