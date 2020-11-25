@@ -29,7 +29,7 @@ body {
 #pre-footer {
     background-color: #232F3E;
     color: #ddd;
-    min-height: 200px;
+    min-height: 120px;
     padding: 10px;
     padding: 10px 0px 0px 40px;
     font-size: 2em;
@@ -76,6 +76,10 @@ h2.store-name {
 }
 
 /* am */
+.a-star-3 {
+    background-position: -37px -368px;
+}
+
 .a-star-4-5 {
     background-position: -175px -368px;
 }
