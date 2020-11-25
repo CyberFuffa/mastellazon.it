@@ -21,6 +21,10 @@ html {
     max-width: 700px;
 }
 
+.store-number {
+    font-size: 1.5em;
+}
+
 .card-deck .card {
     min-width: 400px;
   }

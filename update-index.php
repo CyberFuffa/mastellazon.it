@@ -27,7 +27,6 @@
   </head>
 
   <body>
-    <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.0.1" async></script>
     <nav class="navbar d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom box-shadow">
         <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Mastellazon"></a>
