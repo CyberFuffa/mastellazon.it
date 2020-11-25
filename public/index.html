@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <script type="text/javascript">
+        /*
         if(window.location.protocol != 'https:') {
             window.location.href = "https://www.mastellazon.it"
-        }
+        } */
     </script>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,286 +18,349 @@
     <meta property="og:image"       content="img/og.png" />
 
     <title>Mastellazon</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="images/favicon.png" />
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainbs.css" />
+    <link rel="icon" href="img/logo.png" />
   </head>
 
   <body>
     <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.0.1" async></script>
-    <div id="header">
-        <img src="img/logo.png" alt="Mastellazon">
+    <nav class="navbar d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom box-shadow">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Mastellazon"></a>
+    </nav>
+    <div class="claim px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="lead">Ti svelo un segreto: anche un <u>piccolo artigiano o commerciante sannita</u>
+                può vendere su un marketplace come Amazon.</h1>
+        <h1 class="lead">Lo sapevi che <span class="store-number">15</span> 
+            negozi sanniti sono già usciti dalla mentalità provinciale e raggiungono
+            clienti in tutta Italia?<h1>
     </div>
-    <div id="main">
-        <h1 class="claim">Ti svelo un segreto: anche un <u>piccolo artigiano o commerciante sannita</u>
-            può vendere su un marketplace come Amazon</h1>
-        <h1 class="claim">Lo sapevi che <span class="store-number">15</span> 
-        negozi sanniti sono già usciti dalla mentalità provinciale e raggiungono
-        clienti in tutta Italia?<h1>
-        <ul id="stores">
-                            <li id="store-sannio-music-store" class="store">
-                    <h2 class="store-name">Sannio Music Store</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-b7d6d0638e7d9afb7bb43e8d019a1329" width="80" height="80">
-                            <!-- logo fallback -->
-                            Sannio Music Store                            <!-- /logo fallback -->
-                        </svg>
+    <main role="main">
+        <div class="container">
+            <div class="card-deck mb-3 text-center">
+                                    <div id="store-sannio-music-store" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Sannio Music Store</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-b7d6d0638e7d9afb7bb43e8d019a1329" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Sannio Music Store                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <span id="feedback-no-rating" class="a-color-secondary a-text-italic">Appena lanciato</span><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span id="feedback-no-review" class="a-color-secondary a-text-italic">Al momento non ci sono feedback</span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A1JR2GNGVPCZCU&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <span id="feedback-no-rating" class="a-color-secondary a-text-italic">Appena lanciato</span><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span id="feedback-no-review" class="a-color-secondary a-text-italic">Al momento non ci sono feedback</span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A1JR2GNGVPCZCU&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-arpanet" class="store">
-                    <h2 class="store-name">Arpanet</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-2a0b0b23388c5586661a51c44c6fdc15" width="80" height="80">
-                            <!-- logo fallback -->
-                            Arpanet                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-arpanet" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Arpanet</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-2a0b0b23388c5586661a51c44c6fdc15" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Arpanet                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (40 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A14FIBN0KEAHQP&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (40 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A14FIBN0KEAHQP&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-professione-luce" class="store">
-                    <h2 class="store-name">Professione Luce</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-ee9fb503b60b79bab1401b8632d65b5e" width="80" height="80">
-                            <!-- logo fallback -->
-                            Professione Luce                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-professione-luce" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Professione Luce</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-ee9fb503b60b79bab1401b8632d65b5e" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Professione Luce                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>86% positivi</b> nel ciclo di vita (50 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A1GMMO8F79A4C2&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>86% positivi</b> nel ciclo di vita (50 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A1GMMO8F79A4C2&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-proposte-religiose" class="store">
-                    <h2 class="store-name">Proposte Religiose</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-ea5c45220a04ff540c7ec4edfd7fae51" width="80" height="80">
-                            <!-- logo fallback -->
-                            Proposte Religiose                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-proposte-religiose" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Proposte Religiose</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-ea5c45220a04ff540c7ec4edfd7fae51" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Proposte Religiose                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>95% positivi</b> negli ultimi 12 mesi (20 valutazioni)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A4VCWC9WWERRZ&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>95% positivi</b> negli ultimi 12 mesi (20 valutazioni)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A4VCWC9WWERRZ&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-cimmino-accessori" class="store">
-                    <h2 class="store-name">Cimmino Accessori</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-14cb3a80d536071bde52fc1e29d3120b" width="80" height="80">
-                            <!-- logo fallback -->
-                            Cimmino Accessori                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-cimmino-accessori" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Cimmino Accessori</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-14cb3a80d536071bde52fc1e29d3120b" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Cimmino Accessori                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>96% positivi</b> negli ultimi 12 mesi (108 valutazioni)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A2O6N73M34UK0G&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>96% positivi</b> negli ultimi 12 mesi (108 valutazioni)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A2O6N73M34UK0G&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-fontana-reale-di-corbo-rino" class="store">
-                    <h2 class="store-name">Fontana Reale Di Corbo Rino</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-e921cf83868170e6b594be50d5e6e642" width="80" height="80">
-                            <!-- logo fallback -->
-                            Fontana Reale Di Corbo Rino                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-fontana-reale-di-corbo-rino" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Fontana Reale Di Corbo Rino</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-e921cf83868170e6b594be50d5e6e642" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Fontana Reale Di Corbo Rino                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <span id="feedback-no-rating" class="a-color-secondary a-text-italic">Appena lanciato</span><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span id="feedback-no-review" class="a-color-secondary a-text-italic">Al momento non ci sono feedback</span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A2DW4TA7JLA046&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <span id="feedback-no-rating" class="a-color-secondary a-text-italic">Appena lanciato</span><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span id="feedback-no-review" class="a-color-secondary a-text-italic">Al momento non ci sono feedback</span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A2DW4TA7JLA046&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-cimminotende" class="store">
-                    <h2 class="store-name">Cimminotende</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-552d16e76825f0f2e94543db8a1393b3" width="80" height="80">
-                            <!-- logo fallback -->
-                            Cimminotende                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-cimminotende" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Cimminotende</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-552d16e76825f0f2e94543db8a1393b3" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Cimminotende                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> negli ultimi 12 mesi (15 valutazioni)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A2YUKEG3JIB648&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> negli ultimi 12 mesi (15 valutazioni)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A2YUKEG3JIB648&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-casaecose" class="store">
-                    <h2 class="store-name">Casaecose</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-29a201f5b1fb11f23be863a87de69e44" width="80" height="80">
-                            <!-- logo fallback -->
-                            Casaecose                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-casaecose" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Casaecose</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-29a201f5b1fb11f23be863a87de69e44" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Casaecose                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (49 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A1Y9X0NQ3FFY59&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (49 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A1Y9X0NQ3FFY59&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-biotecnicasrls" class="store">
-                    <h2 class="store-name">Biotecnicasrls</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-b0057104c2c0bd4cb7c168725843bff9" width="80" height="80">
-                            <!-- logo fallback -->
-                            Biotecnicasrls                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-biotecnicasrls" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Biotecnicasrls</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-b0057104c2c0bd4cb7c168725843bff9" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Biotecnicasrls                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>96% positivi</b> nel ciclo di vita (51 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A29MVYVHPB1GXE&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>96% positivi</b> nel ciclo di vita (51 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A29MVYVHPB1GXE&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-far-bene--srl" class="store">
-                    <h2 class="store-name">Far.bene. Srl</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-1cbf6eae98f998216af8416e2d22a33d" width="80" height="80">
-                            <!-- logo fallback -->
-                            Far.bene. Srl                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-far-bene--srl" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Far.bene. Srl</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-1cbf6eae98f998216af8416e2d22a33d" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Far.bene. Srl                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>94% positivi</b> nel ciclo di vita (62 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A2N7WK35WEGHQP&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-4-5 feedback-detail-stars"><span class="a-icon-alt">4.5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>94% positivi</b> nel ciclo di vita (62 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A2N7WK35WEGHQP&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-timbro-musica" class="store">
-                    <h2 class="store-name">Timbro Musica</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-c3a6ac61e7fd7d54e4c42acbdec8731b" width="80" height="80">
-                            <!-- logo fallback -->
-                            Timbro Musica                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-timbro-musica" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Timbro Musica</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-c3a6ac61e7fd7d54e4c42acbdec8731b" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Timbro Musica                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>97% positivi</b> nel ciclo di vita (72 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=AWUHKKKY0XJW1&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>97% positivi</b> nel ciclo di vita (72 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=AWUHKKKY0XJW1&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-webselling-infinity-store" class="store">
-                    <h2 class="store-name">Webselling Infinity Store</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-38c657c7efd654a9e03865f738b90be2" width="80" height="80">
-                            <!-- logo fallback -->
-                            Webselling Infinity Store                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-webselling-infinity-store" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Webselling Infinity Store</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-38c657c7efd654a9e03865f738b90be2" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Webselling Infinity Store                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-3 feedback-detail-stars"><span class="a-icon-alt">3 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>50% positivi</b> nel ciclo di vita (6 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A06236412I1HST2CB27SQ&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-3 feedback-detail-stars"><span class="a-icon-alt">3 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>50% positivi</b> nel ciclo di vita (6 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A06236412I1HST2CB27SQ&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-serino-gioielli" class="store">
-                    <h2 class="store-name">Serino Gioielli</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-64ece3e8e1082be30c05bf8c56ccc569" width="80" height="80">
-                            <!-- logo fallback -->
-                            Serino Gioielli                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-serino-gioielli" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Serino Gioielli</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-64ece3e8e1082be30c05bf8c56ccc569" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Serino Gioielli                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (2 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A2TL6NQL8AM1TA&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (2 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A2TL6NQL8AM1TA&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-alex-office--amp--business-srl" class="store">
-                    <h2 class="store-name">Alex Office &amp; Business Srl</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-b44c790efe6ec1a2660dea6602686ac2" width="80" height="80">
-                            <!-- logo fallback -->
-                            Alex Office &amp; Business Srl                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-alex-office--amp--business-srl" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Alex Office &amp; Business Srl</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-b44c790efe6ec1a2660dea6602686ac2" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Alex Office &amp; Business Srl                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-3 feedback-detail-stars"><span class="a-icon-alt">3 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>46% positivi</b> nel ciclo di vita (13 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A17YESLBUVTQWL&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-3 feedback-detail-stars"><span class="a-icon-alt">3 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>46% positivi</b> nel ciclo di vita (13 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A17YESLBUVTQWL&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                            <li id="store-magazzini-pescatore" class="store">
-                    <h2 class="store-name">Magazzini Pescatore</h2>
-                    <div class="store-logo">
-                        <svg data-jdenticon-value="user-e3d9b302dcdd7fc1d5957c15504a0d31" width="80" height="80">
-                            <!-- logo fallback -->
-                            Magazzini Pescatore                            <!-- /logo fallback -->
-                        </svg>
+                                    <div id="store-magazzini-pescatore" class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="store-name">Magazzini Pescatore</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="store-logo">
+                                <svg data-jdenticon-value="user-e3d9b302dcdd7fc1d5957c15504a0d31" width="80" height="80">
+                                    <!-- logo fallback -->
+                                    Magazzini Pescatore                                    <!-- /logo fallback -->
+                                </svg>
+                            </div>
+                            <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (19 valutazioni totali)</a></span>   </div></div>
+                            <span class="seller-contact-button a-button a-button-primary">
+                                <span class="a-button-inner">
+                                    <a href="https://www.amazon.it/s?me=A3PKSUUEVDK7MS&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                        Scopri
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="store-feedback"><div id="seller-feedback-summary" class="a-row">           <i class="a-icon a-icon-star a-star-5 feedback-detail-stars"><span class="a-icon-alt">5 su 5 stelle</span></i><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-declarative" data-action="activate-tab" data-activate-tab="{&quot;tab&quot;:&quot;feedback&quot;}"><a class="a-link-normal feedback-detail-description" href="#"><b>100% positivi</b> nel ciclo di vita (19 valutazioni totali)</a></span>   </div></div>
-                    <span class="seller-contact-button a-button a-button-primary">
-                        <span class="a-button-inner">
-                            <a href="https://www.amazon.it/s?me=A3PKSUUEVDK7MS&tag=siddolo-21" target="_blank" rel="noopener" class="a-button-text" role="button">
-                                Scopri
-                            </a>
-                        </span>
-                    </span>
-                </li>
-                    </ul>
-    </div>
-    <div id="pre-footer">
-    Sei un negozio sannita e vuoi comparire su questa pagina assieme ai nostri amici sanniti? Semplice, inizia a vendere su Amazon.
-    </div>
-    <div id="footer">
-        Copyright (c) 2020 - Mastellazon - Dai Sanniti per i Sanniti
-    </div>
+                            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <hr>
+        <p>Sei un negozio sannita e vuoi comparire su questa pagina assieme ai nostri amici sanniti? Semplice, inizia a vendere su Amazon.</p>
+        <p>Copyright (c) 2020 - Mastellazon - Dai Sanniti per i Sanniti</p>
+    </footer>
   </body>
 </html>
