@@ -59,13 +59,15 @@ ul#stores li.store{
     border-color: #DDD;
     padding-left: 1px;
     padding-bottom: 1px;
-    padding-right: 2px;
+    padding-right: 1px;
     padding-top: 2px;
     margin: 5px;
 }
 
+
 h2.store-name {
     text-transform: uppercase;
+    font-size: 1em;
 }
 
 /* am */
