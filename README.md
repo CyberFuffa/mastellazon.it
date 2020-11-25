@@ -11,4 +11,4 @@ This joke applications generates a static html page
 
 * Configure `stores.yml` input file
 * Run `php parser/parser.php` to generate `public/config.json`
-* Run `php generate-index.php > index.html` to update static page
+* Run `php update-index.php > index.html` to update static page
