@@ -17,7 +17,7 @@ function loadUrl($url) {
 
 function getContributorsTags() {
     global $contributorsTags;
-    return json_encode($contributorsTags, JSON_PRETTY_PRINT);
+    return json_encode($contributorsTags);
 }
 
 function sanitizeShippingTitle($title) {
