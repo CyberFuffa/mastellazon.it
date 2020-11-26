@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <script type="text/javascript">
         if(window.location.protocol != 'https:') {
-            //window.location.href = "https://www.mastellazon.it"
+            window.location.href = "https://www.mastellazon.it"
         }
     </script>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
