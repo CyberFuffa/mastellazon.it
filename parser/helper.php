@@ -2,12 +2,22 @@
 const MAIN_CONFIG_FILE = 'public/config.json';
 const STORES_BASE_PATH = 'public/stores';
 const STORE_CONFIG_FILE = 'config.json';
-const STORE_LINK = 'https://www.amazon.it/s?me={SELLER}&tag=siddolo-21';
+const STORE_LINK = 'https://www.amazon.it/s?me={SELLER}&tag=';
 
 const PREFIX_SHIPPING_TITLE = 'Profilo del venditore di Amazon.it:';
 
+$contributorsTags = [
+    'siddolo-21',
+    'fej08-21'
+];
+
 function loadUrl($url) {
     return file_get_contents($url);
+}
+
+function getContributorsTags() {
+    global $contributorsTags;
+    return json_encode($contributorsTags, JSON_PRETTY_PRINT);
 }
 
 function sanitizeShippingTitle($title) {

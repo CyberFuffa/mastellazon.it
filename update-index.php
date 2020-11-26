@@ -67,7 +67,7 @@
                             <div class="store-feedback"><?php echo $store->feedback; ?></div>
                             <span class="seller-contact-button a-button a-button-primary">
                                 <span class="a-button-inner">
-                                    <a href="<?php echo $store->link; ?>" target="_blank" rel="noopener" class="a-button-text" role="button">
+                                    <a href="<?php echo $store->link; ?>" target="_blank" rel="noopener" class="a-button-text store-link" role="button">
                                         Scopri
                                     </a>
                                 </span>
@@ -86,41 +86,52 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    var $grid = $('.card-deck').isotope({
-        itemSelector: '.card',
-        layoutMode: 'fitRows',
-        getSortData: {
-            storeName: '.store-name'
-        }
-    });
+  <script type="text/javascript">
+    $(document).ready(function(){
+        var contributorsTag = <?php echo getContributorsTags(); ?>;
 
-    // filter functions
-    var filterFns = {
-        // show if number is greater than 50
-        numberGreaterThan50: function() {
-            var number = $(this).find('.number').text();
-            return parseInt( number, 10 ) > 50;
-        },
-        // show if name ends with -ium
-        ium: function() {
-            var name = $(this).find('.name').text();
-            return name.match( /ium$/ );
-        }
-    };
+        var $grid = $('.card-deck').isotope({
+            itemSelector: '.card',
+            layoutMode: 'fitRows',
+            getSortData: {
+                storeName: '.store-name'
+            }
+        });
 
-    // bind filter button click
-    $('#filters').on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
-        // use filterFn if matches value
-        filterValue = filterFns[ filterValue ] || filterValue;
-        $grid.isotope({ filter: filterValue });
-    });
+        // filter functions
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function() {
+                var number = $(this).find('.number').text();
+                return parseInt( number, 10 ) > 50;
+            },
+            // show if name ends with -ium
+            ium: function() {
+                var name = $(this).find('.name').text();
+                return name.match( /ium$/ );
+            }
+        };
 
-    // bind sort button click
-    $('#sorts').on( 'click', 'button', function() {
-        var sortByValue = $(this).attr('data-sort-by');
-        $grid.isotope({ sortBy: sortByValue });
+        // bind filter button click
+        $('#filters').on( 'click', 'button', function() {
+            var filterValue = $( this ).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[ filterValue ] || filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
+
+        // bind sort button click
+        $('#sorts').on( 'click', 'button', function() {
+            var sortByValue = $(this).attr('data-sort-by');
+            $grid.isotope({ sortBy: sortByValue });
+        });
+
+        // random tags
+        $('.store-link').each(function() {
+            var tag = contributorsTag[Math.floor(Math.random() * contributorsTag.length)];
+            var plainUrl = $(this).attr('href');
+            var tagUrl = $(this).attr('href', plainUrl + tag);
+        });
     });
   </script>
 </html>
