@@ -31,8 +31,17 @@ $mainConfig = [
 ];
 
 $stores = yaml_parse_file('stores.yml', 0);
+$currentStores = getCurrentStoresId();
 
 foreach ($stores['stores'] as $store) {
+    if (in_array($store, $currentStores)) {
+        //skip if store exists in config.json
+        echo "Skipping {$store}" . PHP_EOL;
+        $mainConfig['stores'][] = getCurrentStoresData($store);
+        continue;
+    }
+
+    echo "Parsing {$store}" . PHP_EOL;
     $storeData = parseShipping($store);
     $mainConfig['stores'][] = $storeData;
     updateStore($storeData);

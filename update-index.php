@@ -1,8 +1,6 @@
 <?php
-    const CONFIG_FILE = 'public/config.json';
-    $config = json_decode(file_get_contents(CONFIG_FILE));
-
     include_once 'parser/helper.php';
+    $config = getMainConfig();
 ?>
 <!DOCTYPE html>
 <html lang="en">

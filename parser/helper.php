@@ -46,6 +46,31 @@ function updateMainConfig($mainConfig) {
     file_put_contents(MAIN_CONFIG_FILE, json_encode($mainConfig, JSON_PRETTY_PRINT));
 }
 
+function getMainConfig() {
+    return json_decode(file_get_contents(MAIN_CONFIG_FILE));
+}
+
+function getCurrentStoresId() {
+    $currentStores = [];
+    $config = getMainConfig();
+    foreach ($config->stores as $store) {
+        $currentStores[] = $store->id;
+    }
+
+    return $currentStores;
+}
+
+function getCurrentStoresData($storeId) {
+    $config = getMainConfig();
+    foreach ($config->stores as $store) {
+        if ($store->id == $storeId) {
+            return $store;
+        }
+    }
+
+    return NULL;
+}
+
 function makeInitials($name) {
     preg_match_all('#([A-Z]+)#', $name, $capitals);
     if (count($capitals[1]) >= 2) {
