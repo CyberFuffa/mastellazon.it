@@ -1,18 +1,58 @@
 html {
-    font-size: 14px;
+	height: 100%;
+	font-size: 8px;
+
+	@media(min-width: 768px) {
+		font-size: 9px;
+	}
+
+	@media(min-width: 992px) {
+		font-size: 10px;
+    }
+
+	@media(min-width: 1900px) {
+		font-size: 11px;
+	}
+
+	@media(min-width: 2500px) {
+		font-size: 14px;
+	}
 }
 
-@media (min-width: 768px) {
-    html {
-      font-size: 16px;
-    }
+body {
+    height: 100%;
+    font-size: 1.6rem;
 }
 
 .container {
-    max-width: 960px;
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
 }
 
+.main.container {
+    padding-top: 11.0rem;
+    padding-bottom: 11.0rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
 
+@media(min-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .main.container {
+        padding-top: 9.4rem;
+        padding-bottom: 9.0rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+.footer {
+    padding: 0 2rem;
+}
 .navbar img {
     height: 60px;
 }
@@ -26,8 +66,16 @@ html {
 }
 
 .card-deck .card {
-    min-width: 400px;
-  }
+    width: 300px;
+    height: 230px;    
+}
+
+@media(min-width: 769px) {
+    .card-deck .card {
+        width: 400px;
+        height: 200px;
+    }
+}
 
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }

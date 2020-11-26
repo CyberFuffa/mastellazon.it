@@ -35,3 +35,23 @@ function updateStore($storeData) {
 function updateMainConfig($mainConfig) {
     file_put_contents(MAIN_CONFIG_FILE, json_encode($mainConfig, JSON_PRETTY_PRINT));
 }
+
+function makeInitials($name) {
+    preg_match_all('#([A-Z]+)#', $name, $capitals);
+    if (count($capitals[1]) >= 2) {
+        return substr(implode('', $capitals[1]), 0, 1);
+    }
+    return strtoupper(substr($name, 0, 1));
+}
+
+function makeIndex($stores) {
+    $index = [];
+    foreach($stores as $store) {
+        $initial = makeInitials($store->name);
+        $index[$initial] = $initial;
+    }
+
+    ksort($index);
+    
+    return $index;
+}
