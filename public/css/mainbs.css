@@ -53,6 +53,12 @@ body {
 .footer {
     padding: 0 2rem;
 }
+
+.footer .favicon {
+    height: 16px;
+    margin-bottom: 3px;
+}
+
 .navbar img {
     height: 60px;
 }
