@@ -11,14 +11,18 @@
             window.location.href = "https://www.mastellazon.it"
         }
     </script>
+    <link rel="canonical" href="https://www.mastellazon.it" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:url"         content="https://www.mastellazon.it" />
-    <meta property="og:type"        content="website" />
-    <meta property="og:title"       content="Mastellazon - Lo shopping Sannita" />
-    <meta property="og:description" content="Lo sapevi che un negozio Sannita può raggiungere clienti in tutta Italia?" />
-    <meta property="og:image"       content="https://www.mastellazon.it/img/og.png" />
+    <meta property="og:locale"       content="it_IT" />
+    <meta property="og:url"          content="https://www.mastellazon.it" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Mastellazon - Lo shopping Sannita" />
+    <meta property="og:description"  content="Lo sapevi che un negozio Sannita può raggiungere clienti in tutta Italia?" />
+    <meta property="og:image"        content="https://www.mastellazon.it/img/og.png" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="628" />
 
     <title>Mastellazon</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
