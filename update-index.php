@@ -16,8 +16,8 @@
 
     <meta property="og:url"         content="https://www.mastellazon.it" />
     <meta property="og:type"        content="website" />
-    <meta property="og:title"       content="Mastellazon - Lo shopping sannita" />
-    <meta property="og:description" content="Lo sapevi che un negozio sannita può raggiungere clienti in tutta Italia?" />
+    <meta property="og:title"       content="Mastellazon - Lo shopping Sannita" />
+    <meta property="og:description" content="Lo sapevi che un negozio Sannita può raggiungere clienti in tutta Italia?" />
     <meta property="og:image"       content="https://www.mastellazon.it/img/og.png" />
 
     <title>Mastellazon</title>
@@ -34,10 +34,10 @@
     <main role="main">
         <div class="main container">
             <div class="claim px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <p>Ti svelo un segreto: anche un <u>piccolo artigiano o commerciante sannita</u>
+                <p>Ti svelo un segreto: anche un <u>piccolo artigiano o commerciante Sannita</u>
                         può vendere su un marketplace come Amazon.</p>
                 <p>Lo sapevi che <span class="store-number"><?php echo count($config->stores); ?></span> 
-                    negozi sanniti sono già usciti dalla mentalità provinciale e raggiungono
+                    negozi Sanniti sono già usciti dalla mentalità provinciale e raggiungono
                     clienti in tutta Italia?</p>
             </div>
 
@@ -77,7 +77,7 @@
         </div>
     </main>
     <footer class="footer pt-4 fixed-bottom bg-dark text-white">
-        <p class="text-white">Sei un negozio sannita e vuoi comparire su questa pagina assieme ai nostri amici sanniti? Semplice, inizia a vendere su Amazon.</p>
+        <p class="text-white">Sei un negozio Sannita e vuoi comparire su questa pagina assieme ai nostri amici Sanniti? Semplice, inizia a vendere su Amazon.</p>
         <p> <img src="img/icon.png" alt="CyberFuffa" height="16" class="favicon"> Copyright &copy; CyberFuffa 2020 - Mastellazon - Dai Sanniti per i Sanniti</p>
     </footer>
   </body>
