@@ -37,7 +37,7 @@
                 <p>Ti svelo un segreto: anche un <u>piccolo artigiano o commerciante Sannita</u>
                         può vendere su un marketplace come Amazon.</p>
                 <p>Lo sapevi che <span class="store-number"><?php echo count($config->stores); ?></span> 
-                    negozi Sanniti sono già usciti dalla mentalità provinciale e raggiungono
+                    negozi sanniti sono già usciti dalla mentalità provinciale e raggiungono
                     clienti in tutta Italia?</p>
             </div>
 
@@ -77,7 +77,7 @@
         </div>
     </main>
     <footer class="footer pt-4 fixed-bottom bg-dark text-white">
-        <p class="text-white">Sei un negozio Sannita e vuoi comparire su questa pagina assieme ai nostri amici Sanniti? Semplice, inizia a vendere su Amazon.</p>
+        <p class="text-white">Sei un negozio Sannita e vuoi comparire su questa pagina assieme ai nostri amici sanniti? Semplice, inizia a vendere su Amazon.</p>
         <p> <img src="img/icon.png" alt="CyberFuffa" height="16" class="favicon"> Copyright &copy; CyberFuffa 2020 - Mastellazon - Dai Sanniti per i Sanniti</p>
     </footer>
   </body>
